@@ -1,0 +1,9 @@
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*Name: Lien he tich hop*/
+/*Luu tru­: K3 Deco*/
+/*Website: https://www.k3deco.com*/
+/*----------------------------------*/
+/*-----------------------------------*/
+/* js */
+  var so = 0; window.addEventListener("load", function() { jQuery('.arcontactus-message-button').click(function() { if (!jQuery('#arcontactus').hasClass('open')) { jQuery('.messangers-block').addClass('show-messageners-block'); jQuery('.arcontactus-close').addClass('show-messageners-block'); jQuery('#arcontactus').addClass('open'); so = 6; jQuery('#arcontactus .icons').addClass('hide'); jQuery('#arcontactus .static').addClass('hide') } else { jQuery('.messangers-block').removeClass('show-messageners-block'); jQuery('.arcontactus-close').removeClass('show-messageners-block'); jQuery('#arcontactus').removeClass('open'); jQuery('#arcontactus .static').removeClass('hide'); so = 0 } }); jQuery('.donglienhe span').click(function() { jQuery('.messangers-block').removeClass('show-messageners-block'); jQuery('.arcontactus-close').removeClass('show-messageners-block'); jQuery('#arcontactus').removeClass('open'); jQuery('#arcontactus .static').removeClass('hide'); so = 0 }); var arr = ['-2', '-66', '-130', '-194']; var thanh = setInterval(function() { if (so < 4) { jQuery('#arcontactus .icons').removeClass('hide'); jQuery('#arcontactus .static').addClass('hide'); jQuery('#arcontactus .icons-line').css('transform', 'translate(' + arr[so] + 'px)'); so = so + 1 } else { if (so == 4) { jQuery('#arcontactus .icons').addClass('hide'); jQuery('#arcontactus .static').removeClass('hide'); so = 0 } } }, 2000) }) 
